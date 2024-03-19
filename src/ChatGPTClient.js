@@ -92,7 +92,7 @@ class ChatGPTClient {
     }
 
     if (this.options.contextRemembering) {
-      this.contextData.set(interaction.user.id, reply.id);
+      this.contextData.set(message.author.id, reply.id);
     }
   }
 
